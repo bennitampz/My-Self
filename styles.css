@@ -1,0 +1,607 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #000000; /* Latar belakang putih */
+    color: #333; /* Teks gelap untuk kontras */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #001f3f; /* Biru gelap untuk header */
+    color: #fff; /* Putih untuk teks header */
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #ff4136; /* Merah untuk garis bawah */
+}
+.robotic-text {
+    font-family: 'Orbitron', sans-serif; /* Menggunakan font cyberpunk */
+    font-size: 18px; /* Ukuran font */
+    color: #00ffcc; /* Warna teks hijau neon */
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.7); /* Efek bayangan untuk tampilan neon */
+}
+.greeting {
+    font-size: 24px; /* Ukuran font untuk greeting */
+    margin-bottom: 5px; /* Spasi antara greeting dan nama */
+}
+
+.white-link {
+    color: white; /* Mengatur warna teks menjadi putih */
+    text-decoration: none; /* Menghapus garis bawah */
+}
+
+.white-link:hover {
+    text-decoration: underline; /* Menggarisbawahi saat hover */
+}
+
+.certificate-list {
+    display: flex; /* Mengatur tampilan flex untuk daftar sertifikat */
+    flex-direction: column; /* Mengatur arah kolom */
+    align-items: center; /* Mengatur agar item berada di tengah */
+}
+
+.certificate-item {
+    margin: 20px 0; /* Margin atas dan bawah untuk jarak antar sertifikat */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.certificate-image {
+    width: 100%; /* Mengatur lebar gambar menjadi 100% dari elemen induknya */
+    max-width: 400px; /* Maksimal lebar gambar */
+    height: auto; /* Mempertahankan rasio aspek */
+    border-radius: 8px; /* Sudut melengkung untuk gambar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    transition: transform 0.3s; /* Transisi saat hover */
+}
+
+.certificate-image:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.certificate-description {
+    margin-top: 10px; /* Jarak di atas deskripsi */
+    font-size: 14px; /* Ukuran font untuk deskripsi */
+    color: #333; /* Warna teks */
+}
+
+
+.certificate-description {
+    margin-top: 10px;
+    font-size: 14px; /* Ukuran font untuk deskripsi */
+    color: #333; /* Warna teks */
+}
+.name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px; /* Ukuran font besar untuk nama */
+    font-weight: bold; /* Tebalkan nama */
+    line-height: 1; /* Mengatur jarak antar garis */
+    color: #00ffcc; /* Merah untuk nama */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Bayangan untuk efek kedalaman */
+}
+.profile-photo {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 5px solid #ff0000; /* Merah */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff0000; /* Merah */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+html {
+    scroll-behavior: smooth; /* Menambahkan efek scroll halus */
+}
+
+section {
+    padding: 60px 20px; /* Menambahkan padding untuk jarak dengan navigasi */
+    margin-top: -60px; /* Menghindari overlap dengan navigasi */
+}
+
+section {
+    background: #ffffff; /* Putih */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #ff0000; /* Merah */
+    margin-bottom: 10px;
+}
+
+.skill-list, .certificate-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-item, .certificate-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #000000; /* Hitam */
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+
+.skill-item:hover, .project-item:hover, .certificate-item:hover {
+    background: #f5f5f5; /* Latar belakang abu-abu saat hover */
+}
+
+.certificate-list {
+    display: flex; /* Mengatur tampilan flex untuk daftar sertifikat */
+    flex-direction: column; /* Mengatur arah kolom */
+    align-items: center; /* Mengatur agar item berada di tengah */
+}
+
+.certificate-item {
+    background-color: #f9f9f9; /* Latar belakang cerah untuk setiap item */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 20px; /* Ruang di dalam item */
+    margin: 10px 0; /* Jarak antar item */
+    width: 100%; /* Mengatur lebar item */
+    max-width: 400px; /* Lebar maksimum item */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.certificate-content {
+    display: flex; /* Mengatur tampilan flex untuk isi sertifikat */
+    flex-direction: column; /* Mengatur arah kolom */
+    align-items: center; /* Menyelaraskan item di tengah */
+}
+
+.certificate-image {
+    width: 100%; /* Mengatur lebar gambar menjadi 100% */
+    max-width: 300px; /* Lebar maksimum gambar */
+    height: auto; /* Mempertahankan rasio aspek */
+    border-radius: 8px; /* Sudut melengkung untuk gambar */
+    margin-bottom: 10px; /* Jarak bawah gambar */
+}
+
+.certificate-info {
+    display: flex; /* Mengatur tampilan flex untuk informasi sertifikat */
+    flex-direction: column; /* Mengatur arah kolom */
+    align-items: center; /* Menyelaraskan item di tengah */
+}
+.certificate-item {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer; /* Menunjukkan bahwa gambar dapat diklik */
+}
+
+.modal {
+    display: none; /* Secara default tersembunyi */
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#caption {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Jarak antar proyek */
+}
+.download-button {
+    display: inline-block;
+    padding: 10px 20px; /* Atur padding sesuai kebutuhan */
+    background-color: #d0cfcf; /* Warna latar belakang */
+    color: #000; /* Warna teks */
+    text-decoration: none; /* Hapus garis bawah */
+    border-radius: 5px; /* Sudut melengkung */
+    font-weight: bold; /* Teks tebal */
+    transition: background-color 0.3s; /* Efek transisi */
+    margin-bottom: 20px;
+}
+#education-skills {
+    background-color: #fafafa; /* Warna latar belakang */
+    color: #000000; /* Warna teks */
+    font-size: medium;
+    padding: 20px; /* Ruang di dalam section */
+    border-radius: 8px; /* Sudut melengkung */
+}
+#contact {
+    background-color: #1a1a1a; /* Latar belakang gelap */
+    color: #fff; /* Warna teks */
+    padding: 20px; /* Ruang di dalam section */
+    border-radius: 8px; /* Sudut melengkung */
+    margin: 20px 0; /* Margin atas dan bawah */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Jarak antar paragraf */
+    font-size: 18px; /* Ukuran font */
+}
+
+.contact-info strong {
+    color: #d0cfcf; /* Warna untuk label */
+}
+
+h2 {
+    font-size: 24px; /* Ukuran font untuk judul utama */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+h3 {
+    font-size: 20px; /* Ukuran font untuk subjudul */
+    margin: 10px 0 5px; /* Jarak atas dan bawah */
+}
+
+.skill-set {
+    display: flex; /* Mengatur tampilan menjadi baris */
+    flex-wrap: wrap; /* Membungkus jika terlalu banyak */
+    gap: 10px; /* Jarak antar item */
+}
+
+.skill-set p {
+    background-color: #333; /* Warna latar belakang untuk skill */
+    padding: 5px 10px; /* Padding dalam skill */
+    border-radius: 5px; /* Sudut melengkung */
+    margin: 0; /* Menghapus margin */
+}
+
+.download-button:hover {
+    background-color: #b0a3a3; /* Warna saat hover */
+}
+
+.project-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+.project-images {
+    display: flex;
+    justify-content: space-between; /* Rata kiri dan kanan */
+    margin-top: 10px;
+}
+
+.project-images img {
+    width: 30%; /* Lebar gambar 30% dari container */
+    height: 30%;
+    border-radius: 5px; /* Menambahkan sudut melengkung pada gambar */
+}
+
+
+.view-more {
+    margin-top: 20px; /* Jarak atas untuk link */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #007bff; /* Warna teks */
+    font-weight: bold; /* Menebalkan teks */
+}
+
+.view-more:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+    color: #0056b3; /* Warna saat hover */
+}
+body {
+    font-family: 'Arial', sans-serif; /* Font umum */
+    background-color: #121212; /* Latar belakang gelap */
+    color: #fff; /* Warna teks */
+}
+
+#footer {
+    background-color: #1a1a1a; /* Warna latar belakang footer */
+    padding: 40px; /* Ruang di dalam footer */
+    border-top: 1px solid #444; /* Garis atas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Bayangan */
+}
+
+.footer-content {
+    display: flex; /* Mengatur tampilan footer menjadi baris */
+    justify-content: space-between; /* Rata kiri dan kanan */
+    flex-wrap: wrap; /* Membungkus jika terlalu banyak */
+}
+
+.footer-left {
+    flex: 2; /* Lebar bagian kiri */
+    margin-right: 20px; /* Jarak kanan */
+}
+
+.footer-middle, .footer-right, .footer-social {
+    flex: 1; /* Lebar bagian tengah, kanan, dan sosial */
+    margin-left: 20px; /* Jarak kiri */
+}
+
+h1 {
+    font-size: 26px; /* Ukuran font untuk nama */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+h3 {
+    font-size: 20px; /* Ukuran font untuk subjudul */
+    margin: 10px 0; /* Jarak atas dan bawah */
+}
+
+ul {
+    list-style: none; /* Menghapus bullet pada list */
+    padding: 0; /* Menghapus padding */
+}
+
+ul li {
+    margin: 20px 0; /* Jarak antar item */
+}
+
+ul li a {
+    color: #d0cfcf; /* Warna link */
+    text-decoration: none; /* Menghapus garis bawah */
+    transition: color 0.3s; /* Efek transisi */
+}
+
+ul li a:hover {
+    color: #fff; /* Warna saat hover */
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.footer-social ul {
+    display: flex; /* Mengatur tampilan sosial menjadi baris */
+    flex-wrap: wrap; /* Membungkus jika terlalu banyak */
+}
+
+.footer-social ul li {
+    margin-right: 15px; /* Jarak antar item sosial */
+}
+body {
+    font-family: 'Arial', sans-serif; /* Font umum */
+    background-color: #121212; /* Latar belakang gelap */
+    color: #fff; /* Warna teks */
+}
+
+#footer {
+    background-color: #1a1a1a; /* Warna latar belakang footer */
+    padding: 40px; /* Ruang di dalam footer */
+    border-top: 1px solid #444; /* Garis atas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Bayangan */
+}
+
+.footer-content {
+    display: flex; /* Mengatur tampilan footer menjadi baris */
+    justify-content: space-between; /* Rata kiri dan kanan */
+    flex-wrap: wrap; /* Membungkus jika terlalu banyak */
+}
+
+.footer-left {
+    flex: 2; /* Lebar bagian kiri */
+    margin-right: 20px; /* Jarak kanan */
+}
+
+.footer-middle, .footer-right, .footer-social {
+    flex: 1; /* Lebar bagian tengah, kanan, dan sosial */
+    margin-left: 20px; /* Jarak kiri */
+}
+
+h1 {
+    font-size: 24px; /* Ukuran font untuk nama */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+h3 {
+    font-size: 18px; /* Ukuran font untuk subjudul */
+    margin: 10px 0; /* Jarak atas dan bawah */
+}
+
+ul {
+    list-style: none; /* Menghapus bullet pada list */
+    padding: 0; /* Menghapus padding */
+}
+
+ul li {
+    margin: 5px 0; /* Jarak antar item */
+}
+
+ul li a {
+    color: #d0cfcf; /* Warna link */
+    text-decoration: none; /* Menghapus garis bawah */
+    transition: color 0.3s; /* Efek transisi */
+}
+
+ul li a:hover {
+    color: #fff; /* Warna saat hover */
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.footer-social ul {
+    display: flex; /* Mengatur tampilan sosial menjadi baris */
+    flex-wrap: wrap; /* Membungkus jika terlalu banyak */
+}
+
+.footer-social ul li {
+    margin-right: 15px; /* Jarak antar item sosial */
+}
+
+.certificate-image {
+    width: 100%; /* Sesuaikan lebar gambar */
+    height: auto; /* Pertahankan rasio aspek */
+    border-radius: 5px; /* Sudut melengkung */
+    margin: 10px 0; /* Spasi di atas dan bawah gambar */
+    opacity: 100; /* Mulai dengan tidak terlihat */
+    transform: translateY(20px); /* Posisi awal di bawah */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animasi efek */
+}
+
+.certificate-item.show .certificate-image {
+    opacity: 1; /* Tampilkan gambar */
+    transform: translateY(0); /* Kembali ke posisi normal */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #ff0000; /* Merah */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #cc0000; /* Merah lebih gelap saat hover */
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #000000; /* Hitam */
+    color: #ffffff; /* Putih */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ff0000; /* Merah */
+}
+
+ul li a:hover {
+    color: #cc0000; /* Merah lebih gelap saat hover */
+}
+#about {
+    background-color: #ffffff; /* Latar belakang gelap untuk section */
+    color: #fff; /* Warna teks default untuk section */
+    padding: 20px; /* Ruang di dalam section */
+    border-radius: 8px; /* Sudut melengkung */
+}
+
+#about h2 {
+    color: #ff0000; /* Warna hitam untuk judul */
+}
+
+#about p {
+    color: #000; /* Warna hitam untuk paragraf */
+}
+
+#projects {
+    background-color: #ffffff; /* Latar belakang gelap untuk section */
+    color: #fff; /* Warna teks default untuk section */
+    padding: 20px; /* Ruang di dalam section */
+    border-radius: 8px; /* Sudut melengkung */
+}
+
+#projects h2 {
+    color: #ff0000; /* Warna hitam untuk judul */
+}
+
+#projects p {
+    color: #000; /* Warna hitam untuk paragraf */
+}
+
+#certificates {
+    background-color: #ffffff; /* Latar belakang gelap untuk section */
+    color: #000000; /* Warna teks default untuk section */
+    padding: 20px; /* Ruang di dalam section */
+    border-radius: 8px; /* Sudut melengkung */
+}
+
+#certificates h2 {
+    color: #ff0000; /* Warna hitam untuk judul */
+}
+
+#certificates p {
+    color: #000; /* Warna hitam untuk paragraf */
+}
+
+.view-more {
+    color: #007BFF; /* Warna untuk tautan */
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    font-weight: bold; /* Teks tebal */
+}
+
+.view-more:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
